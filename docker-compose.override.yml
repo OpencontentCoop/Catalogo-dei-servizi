@@ -1,0 +1,36 @@
+version: "3.7"
+
+services:
+
+  php:
+    build: .
+    volumes:
+      - ./dfs:/mnt/efs/cluster-comunweb
+      - ./conf.d/ez:/var/www/html/settings
+      #- ./html/extension:/var/www/html/extension
+      #- ./html/vendor/opencontent:/var/www/html/vendor/opencontent
+
+  nginx:
+    build:
+      context: .
+      dockerfile: Dockerfile.nginx
+      args:
+        php_image: registry.gitlab.com/opencontent/servizipubblici/php:latest
+
+  pgweb:
+    image: sosedoff/pgweb
+    environment:
+      DATABASE_URL: postgres://openpa:openp4ssword@postgres:5432/trentoservizipubblici?sslmode=disable
+    depends_on:
+      - postgres 
+
+  mailhog:
+    image: mailhog/mailhog
+    # must be explicit about what port to proxy from traefik, because the service expose two ports
+    labels:
+      traefik.port: 8025
+
+  solr:
+    environment:
+      VERBOSE: 'yes'
+

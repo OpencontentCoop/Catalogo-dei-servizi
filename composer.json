@@ -1,0 +1,69 @@
+{
+  "name": "opencontent/project-openpa",
+  "description": "OpenContent OpenPA base project installer",
+  "license": "GPL-2.0",
+  "minimum-stability": "dev",
+  "require": {
+    "php": "5.6.40",
+    "composer/installers": "~1.0.0",
+    "opencontent/opencontent-project-installer": "~1.0",
+    "ezsystems/ezpublish-legacy": "dev-consorzioweb",
+    "ezsystems/ezpublish-legacy-installer": "dev-settings",
+    "ezsystems/ezfind-ls": "v2015.01.0",
+    "ezsystems/eztags-ls": "2.2.1",
+    "lolautruche/sqliimport": "~1.3",
+    "opencontent/ocbootstrap-ls": "1.*",
+    "opencontent/occhangeobjectdate-ls": "1.*",
+    "opencontent/ocembed-ls": "1.*",
+    "opencontent/ocevents-ls": "1.*",
+    "opencontent/easyvocs_connector-ls": "dev-master",
+    "opencontent/ocexportas-ls": "1.*",
+    "opencontent/ocmap-ls": "1.*",
+    "opencontent/ocopendata-ls": "2.*",
+    "opencontent/ocoperatorscollection-ls": "1.*",
+    "opencontent/ocrecaptcha-ls": "1.*",
+    "opencontent/ocrss-ls": "1.*",
+    "opencontent/ocsearchtools-ls": "1.*",
+    "opencontent/openpa-ls": "~2.26",
+    "opencontent/ocbinarynullparser-ls": "1.*",
+    "opencontent/ocmultibinary-ls": "1.*",
+    "opencontent/ezpostgresqlcluster-ls": "dev-md5",
+    "opencontent/ocopendata_forms-ls": "1.*",
+    "aws/aws-sdk-php": "3.*",
+    "opencontent/ocsupport-ls": "dev-master",
+    "opencontent/ocopendata_forms_design-ls": "1.*",
+    "opencontent/ocgdprtools-ls": "1.*",
+    "opencontent/openpa_bootstrapitalia-ls": "dev-master",
+    "opencontent/occodicefiscale-ls": "dev-master",
+    "ezsystems/ezmbpaex-ls": "5.3.3.3"
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/Opencontent/ezpublish-legacy.git"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/Opencontent/ezpublish-legacy-installer.git"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/Opencontent/ezgmaplocation-ls-extension.git"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/Opencontent/ezpostgresqlcluster.git"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/Opencontent/ezmbpaex.git"
+    }
+  ],
+  "extra": {
+    "ezpublish-legacy-dir": "html"
+  },
+    "config": {
+    "vendor-dir": "html/vendor",
+    "discard-changes": true
+  }
+}
