@@ -1,0 +1,10 @@
+<?php /*
+
+[AvailableHandlers]
+Handlers[table_view]=OpenPABootstrapItaliaTableViewClassExtraParameters
+Handlers[attribute_group]=OpenPABootstrapItaliaAttributeGroupExtraParameter
+Handlers[line_view]=OpenPABootstrapItaliaLineViewClassExtraParameters
+Handlers[search_form]=OpenPASearchFormClassExtraParameters
+Handlers[bootstrapitalia_icon]=OpenPABootstrapItaliaIconExtraParameter
+
+*/ ?>

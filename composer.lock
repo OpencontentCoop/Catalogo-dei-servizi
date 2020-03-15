@@ -1,0 +1,3322 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "31560ce0a58c79dfdde1ff1e7373a16b",
+    "packages": [
+        {
+            "name": "aws/aws-sdk-php",
+            "version": "3.133.35",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/aws/aws-sdk-php.git",
+                "reference": "ab87be32ed4f52a9779d40277e4989af35be7dd5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/ab87be32ed4f52a9779d40277e4989af35be7dd5",
+                "reference": "ab87be32ed4f52a9779d40277e4989af35be7dd5",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "ext-pcre": "*",
+                "ext-simplexml": "*",
+                "guzzlehttp/guzzle": "^5.3.3|^6.2.1|^7.0",
+                "guzzlehttp/promises": "^1.0",
+                "guzzlehttp/psr7": "^1.4.1",
+                "mtdowling/jmespath.php": "^2.5",
+                "php": ">=5.5"
+            },
+            "require-dev": {
+                "andrewsville/php-token-reflection": "^1.4",
+                "aws/aws-php-sns-message-validator": "~1.0",
+                "behat/behat": "~3.0",
+                "doctrine/cache": "~1.4",
+                "ext-dom": "*",
+                "ext-openssl": "*",
+                "ext-pcntl": "*",
+                "ext-sockets": "*",
+                "nette/neon": "^2.3",
+                "phpunit/phpunit": "^4.8.35|^5.4.3",
+                "psr/cache": "^1.0",
+                "psr/simple-cache": "^1.0",
+                "sebastian/comparator": "^1.2.3"
+            },
+            "suggest": {
+                "aws/aws-php-sns-message-validator": "To validate incoming SNS notifications",
+                "doctrine/cache": "To use the DoctrineCacheAdapter",
+                "ext-curl": "To send requests using cURL",
+                "ext-openssl": "Allows working with CloudFront private distributions and verifying received SNS messages",
+                "ext-sockets": "To use client-side monitoring"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Aws\\": "src/"
+                },
+                "files": [
+                    "src/functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Amazon Web Services",
+                    "homepage": "http://aws.amazon.com"
+                }
+            ],
+            "description": "AWS SDK for PHP - Use Amazon Web Services in your PHP project",
+            "homepage": "http://aws.amazon.com/sdkforphp",
+            "keywords": [
+                "amazon",
+                "aws",
+                "cloud",
+                "dynamodb",
+                "ec2",
+                "glacier",
+                "s3",
+                "sdk"
+            ],
+            "time": "2020-03-12T19:45:53+00:00"
+        },
+        {
+            "name": "composer/installers",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/composer/installers.git",
+                "reference": "7d610d50aae61ae7ed6675e58efeabdf279bb5e3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/composer/installers/zipball/7d610d50aae61ae7ed6675e58efeabdf279bb5e3",
+                "reference": "7d610d50aae61ae7ed6675e58efeabdf279bb5e3",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0"
+            },
+            "replace": {
+                "roundcube/plugin-installer": "*",
+                "shama/baton": "*"
+            },
+            "require-dev": {
+                "composer/composer": "1.0.*@dev",
+                "phpunit/phpunit": "^4.8.36"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "Composer\\Installers\\Plugin",
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Composer\\Installers\\": "src/Composer/Installers"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kyle Robinson Young",
+                    "email": "kyle@dontkry.com",
+                    "homepage": "https://github.com/shama"
+                }
+            ],
+            "description": "A multi-framework Composer library installer",
+            "homepage": "https://composer.github.io/installers/",
+            "keywords": [
+                "Craft",
+                "Dolibarr",
+                "Eliasis",
+                "Hurad",
+                "ImageCMS",
+                "Kanboard",
+                "Lan Management System",
+                "MODX Evo",
+                "MantisBT",
+                "Mautic",
+                "Maya",
+                "OXID",
+                "Plentymarkets",
+                "Porto",
+                "RadPHP",
+                "SMF",
+                "Thelia",
+                "Whmcs",
+                "WolfCMS",
+                "agl",
+                "aimeos",
+                "annotatecms",
+                "attogram",
+                "bitrix",
+                "cakephp",
+                "chef",
+                "cockpit",
+                "codeigniter",
+                "concrete5",
+                "croogo",
+                "dokuwiki",
+                "drupal",
+                "eZ Platform",
+                "elgg",
+                "expressionengine",
+                "fuelphp",
+                "grav",
+                "installer",
+                "itop",
+                "joomla",
+                "known",
+                "kohana",
+                "laravel",
+                "lavalite",
+                "lithium",
+                "magento",
+                "majima",
+                "mako",
+                "mediawiki",
+                "modulework",
+                "modx",
+                "moodle",
+                "osclass",
+                "phpbb",
+                "piwik",
+                "ppi",
+                "puppet",
+                "pxcms",
+                "reindex",
+                "roundcube",
+                "shopware",
+                "silverstripe",
+                "sydes",
+                "sylius",
+                "symfony",
+                "typo3",
+                "wordpress",
+                "yawik",
+                "zend",
+                "zikula"
+            ],
+            "time": "2020-02-07T10:39:20+00:00"
+        },
+        {
+            "name": "ezsystems/ezautosave-ls",
+            "version": "5.4.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ezsystems/ezautosave.git",
+                "reference": "e5d458ec6e6878dbc723da00cdf2824ffaa66a36"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ezsystems/ezautosave/zipball/e5d458ec6e6878dbc723da00cdf2824ffaa66a36",
+                "reference": "e5d458ec6e6878dbc723da00cdf2824ffaa66a36",
+                "shasum": ""
+            },
+            "require": {
+                "ezsystems/ezpublish-legacy-installer": "*"
+            },
+            "type": "ezpublish-legacy-extension",
+            "extra": {
+                "ezpublish-legacy-extension-name": "ezautosave"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Quoc-Huy Nguyen Dinh",
+                    "email": "contact@quoc-huy.com"
+                },
+                {
+                    "name": "Damien Pobel",
+                    "email": "damien.pobel@ez.no"
+                }
+            ],
+            "description": "Content editing autosave extension for eZ Publish legacy",
+            "time": "2015-03-30T15:15:25+00:00"
+        },
+        {
+            "name": "ezsystems/ezfind-ls",
+            "version": "v2015.01.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ezsystems/ezfind.git",
+                "reference": "d54863bffd29a005dfaf10a18f663c7c962a03b1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ezsystems/ezfind/zipball/d54863bffd29a005dfaf10a18f663c7c962a03b1",
+                "reference": "d54863bffd29a005dfaf10a18f663c7c962a03b1",
+                "shasum": ""
+            },
+            "require": {
+                "ezsystems/ezpublish-legacy-installer": "*"
+            },
+            "type": "ezpublish-legacy-extension",
+            "extra": {
+                "ezpublish-legacy-extension-name": "ezfind"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "eZ Publish dev-team & eZ Community",
+                    "homepage": "https://github.com/ezsystems/ezfind/contributors"
+                }
+            ],
+            "description": "eZ Find is a search extension for eZ Publish legacy, providing more functionality and better results than the default search in eZ Publish.",
+            "time": "2015-02-23T15:45:41+00:00"
+        },
+        {
+            "name": "ezsystems/ezflow-ls-extension",
+            "version": "v5.4.0-beta1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ezsystems/ezflow-ls-extension.git",
+                "reference": "d24f2cda16817a88231d7ffb8c6828a381c3b1cc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ezsystems/ezflow-ls-extension/zipball/d24f2cda16817a88231d7ffb8c6828a381c3b1cc",
+                "reference": "d24f2cda16817a88231d7ffb8c6828a381c3b1cc",
+                "shasum": ""
+            },
+            "require": {
+                "ezsystems/ezpublish-legacy-installer": "*"
+            },
+            "suggest": {
+                "ezsystems/ezgmaplocation-ls-extension": "~5.3",
+                "ezsystems/ezstarrating-ls-extension": "~5.3",
+                "ezsystems/ezwt-ls-extension": "~5.3"
+            },
+            "type": "ezpublish-legacy-extension",
+            "extra": {
+                "ezpublish-legacy-extension-name": "ezflow"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "eZ Publish dev-team & eZ Community",
+                    "homepage": "https://github.com/ezsystems/ezflow-extension"
+                }
+            ],
+            "description": "eZ Publish Legacy Flow extension",
+            "time": "2014-09-23T08:12:19+00:00"
+        },
+        {
+            "name": "ezsystems/ezgmaplocation-ls-extension",
+            "version": "dev-postgres",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Opencontent/ezgmaplocation-ls-extension.git",
+                "reference": "f290c66c9b15a1210888088e3d2e0384ab9afc9f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Opencontent/ezgmaplocation-ls-extension/zipball/f290c66c9b15a1210888088e3d2e0384ab9afc9f",
+                "reference": "f290c66c9b15a1210888088e3d2e0384ab9afc9f",
+                "shasum": ""
+            },
+            "require": {
+                "ezsystems/ezpublish-legacy-installer": "*"
+            },
+            "suggest": {
+                "ezsystems/ezdemo-ls-extension": "~5.4@beta",
+                "ezsystems/ezflow-ls-extension": "~5.4@beta",
+                "ezsystems/ezwebin-ls-extension": "~5.4@beta"
+            },
+            "type": "ezpublish-legacy-extension",
+            "extra": {
+                "ezpublish-legacy-extension-name": "ezgmaplocation"
+            },
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "eZ Publish dev-team & eZ Community",
+                    "homepage": "https://github.com/ezsystems/ezgmaplocation"
+                }
+            ],
+            "description": "eZ Publish Legacy map location datatype extension",
+            "support": {
+                "source": "https://github.com/Opencontent/ezgmaplocation-ls-extension/tree/postgres"
+            },
+            "time": "2018-04-03T11:09:08+00:00"
+        },
+        {
+            "name": "ezsystems/ezie-ls",
+            "version": "v5.3.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ezsystems/ezie.git",
+                "reference": "0d14bfa5330cf3afe002f97ff8deae0b8025c382"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ezsystems/ezie/zipball/0d14bfa5330cf3afe002f97ff8deae0b8025c382",
+                "reference": "0d14bfa5330cf3afe002f97ff8deae0b8025c382",
+                "shasum": ""
+            },
+            "require": {
+                "ezsystems/ezpublish-legacy-installer": "*"
+            },
+            "type": "ezpublish-legacy-extension",
+            "extra": {
+                "ezpublish-legacy-extension-name": "ezie"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "eZ Publish dev-team & eZ Community",
+                    "homepage": "https://github.com/ezsystems/ezie/contributors"
+                }
+            ],
+            "description": "An image editor for simple and usual image modifications integrated in the editing interface of any eZ Publish Content Object that has at least an image as attribute.",
+            "time": "2018-09-07T04:12:34+00:00"
+        },
+        {
+            "name": "ezsystems/ezmbpaex-ls",
+            "version": "5.3.3.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Opencontent/ezmbpaex.git",
+                "reference": "ad2c5563d64ba78c5a3719d856d2a60e2fab9816"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Opencontent/ezmbpaex/zipball/ad2c5563d64ba78c5a3719d856d2a60e2fab9816",
+                "reference": "ad2c5563d64ba78c5a3719d856d2a60e2fab9816",
+                "shasum": ""
+            },
+            "require": {
+                "ezsystems/ezpublish-legacy-installer": "*"
+            },
+            "type": "ezpublish-legacy-extension",
+            "extra": {
+                "ezpublish-legacy-extension-name": "ezmbpaex"
+            },
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "eZ Publish dev-team & eZ Community",
+                    "homepage": "https://github.com/ezsystems/ezmbpaex/contributors"
+                }
+            ],
+            "description": "eZ Publish Legacy Extension that provides functionality for password expiration and validation.",
+            "support": {
+                "source": "https://github.com/Opencontent/ezmbpaex/tree/5.3.3.3"
+            },
+            "time": "2019-12-21T00:29:07+00:00"
+        },
+        {
+            "name": "ezsystems/ezmultiupload-ls",
+            "version": "v5.3.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ezsystems/ezmultiupload.git",
+                "reference": "60ef0cb520d5403525b76162f4dc069be0e25a16"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ezsystems/ezmultiupload/zipball/60ef0cb520d5403525b76162f4dc069be0e25a16",
+                "reference": "60ef0cb520d5403525b76162f4dc069be0e25a16",
+                "shasum": ""
+            },
+            "require": {
+                "ezsystems/ezpublish-legacy-installer": "*"
+            },
+            "type": "ezpublish-legacy-extension",
+            "extra": {
+                "ezpublish-legacy-extension-name": "ezmultiupload"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "eZ Publish dev-team & eZ Community",
+                    "homepage": "https://github.com/ezsystems/ezmultiupload/contributors"
+                }
+            ],
+            "description": "Multi-upload extension for eZ Publish legacy",
+            "time": "2017-03-23T08:20:11+00:00"
+        },
+        {
+            "name": "ezsystems/ezodf-ls",
+            "version": "v5.3.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ezsystems/ezodf.git",
+                "reference": "e6d43b830f8812168ddba2c5922e998c1deca2cb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ezsystems/ezodf/zipball/e6d43b830f8812168ddba2c5922e998c1deca2cb",
+                "reference": "e6d43b830f8812168ddba2c5922e998c1deca2cb",
+                "shasum": ""
+            },
+            "require": {
+                "ezsystems/ezpublish-legacy-installer": "*"
+            },
+            "type": "ezpublish-legacy-extension",
+            "extra": {
+                "ezpublish-legacy-extension-name": "ezodf"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "eZ Publish dev-team & eZ Community",
+                    "homepage": "https://github.com/ezsystems/ezodf/contributors"
+                }
+            ],
+            "description": "This extension enables import and export of OpenOffice.org Writer documents within eZ Publish legacy",
+            "time": "2015-10-20T09:34:29+00:00"
+        },
+        {
+            "name": "ezsystems/ezprestapiprovider-ls",
+            "version": "v5.4.0-beta1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ezsystems/ezprestapiprovider.git",
+                "reference": "84938212a66b4e0674451f1120c250052059c7aa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ezsystems/ezprestapiprovider/zipball/84938212a66b4e0674451f1120c250052059c7aa",
+                "reference": "84938212a66b4e0674451f1120c250052059c7aa",
+                "shasum": ""
+            },
+            "require": {
+                "ezsystems/ezpublish-legacy-installer": "*"
+            },
+            "type": "ezpublish-legacy-extension",
+            "extra": {
+                "ezpublish-legacy-extension-name": "ezprestapiprovider"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "eZ Publish dev-team & eZ Community",
+                    "homepage": "https://github.com/ezsystems/ezprestapiprovider/contributors"
+                }
+            ],
+            "description": "eZ Publish REST API v1 content provider",
+            "time": "2014-05-16T23:35:35+00:00"
+        },
+        {
+            "name": "ezsystems/ezpublish-legacy",
+            "version": "dev-consorzioweb",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Opencontent/ezpublish-legacy.git",
+                "reference": "f3dedabc2ec9677c9a08397b472b1918966ba382"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Opencontent/ezpublish-legacy/zipball/f3dedabc2ec9677c9a08397b472b1918966ba382",
+                "reference": "f3dedabc2ec9677c9a08397b472b1918966ba382",
+                "shasum": ""
+            },
+            "require": {
+                "ext-dom": "*",
+                "ext-iconv": "*",
+                "ext-json": "*",
+                "ext-libxml": "*",
+                "ext-mbstring": "*",
+                "ext-pcre": "*",
+                "ext-reflection": "*",
+                "ext-session": "*",
+                "ext-simplexml": "*",
+                "ext-spl": "*",
+                "ezsystems/ezautosave-ls": "~5.3",
+                "ezsystems/ezflow-ls-extension": "~5.3",
+                "ezsystems/ezgmaplocation-ls-extension": "dev-postgres",
+                "ezsystems/ezie-ls": "~5.3",
+                "ezsystems/ezmbpaex-ls": "~5.3",
+                "ezsystems/ezmultiupload-ls": "~5.3",
+                "ezsystems/ezodf-ls": "~5.3",
+                "ezsystems/ezprestapiprovider-ls": "~5.3",
+                "ezsystems/ezpublish-legacy-installer": "*",
+                "ezsystems/ezstarrating-ls-extension": "~5.3",
+                "ezsystems/ezwt-ls-extension": "~5.3",
+                "php": ">=5.3.3",
+                "zetacomponents/archive": "~1.5",
+                "zetacomponents/authentication": "~1.4",
+                "zetacomponents/authentication-database-tiein": "~1.2",
+                "zetacomponents/cache": "~1.6",
+                "zetacomponents/configuration": "~1.4",
+                "zetacomponents/console-tools": "~1.7",
+                "zetacomponents/database": "~1.5",
+                "zetacomponents/debug": "~1.3",
+                "zetacomponents/event-log": "~1.5",
+                "zetacomponents/feed": "~1.4",
+                "zetacomponents/image-conversion": "~1.4",
+                "zetacomponents/mail": "~1.8",
+                "zetacomponents/mvc-authentication-tiein": "~1.1",
+                "zetacomponents/mvc-tools": "~1.2",
+                "zetacomponents/persistent-object": "~1.8",
+                "zetacomponents/signal-slot": "~1.2",
+                "zetacomponents/system-information": "~1.1",
+                "zetacomponents/webdav": "~1.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*",
+                "zetacomponents/php-generator": "~1.1"
+            },
+            "suggest": {
+                "ext-curl": "Curl provides better support for interacting with other servers, like downloading packages over SSL",
+                "ext-gd": "Unless you have ImageMagic installed GD is required for eZ Publish to be able to manipulate images",
+                "ext-mysqli": "Mysqli is the default database handler used by eZ Publish",
+                "ext-pcntl": "If you plan to take advantage of eZ Publish Async publishing feature, then pcntl extension is required",
+                "ezsystems/ezfind-ls": "ezfind is a Solr based advance search engine for eZ Publish with a lot more features then the built in search",
+                "ezsystems/ezscriptmonitor-ls": "ezscriptmonitor makes it possible to better deal with long running bulk operations within eZ Publish",
+                "ezsystems/ezsi-ls": "ezsi would allow you to use Edge/Server Side Includes of blocks in templates",
+                "ezsystems/eztags-ls": "eztags is a full tagging/taxonomy solution for eZ Publish replacing the simpler builtin ezkeywords datatype",
+                "php-64bit": "For support of more than 30 languages, a 64bit php installation on all involved prod/dev machines is required"
+            },
+            "type": "ezpublish-legacy",
+            "license": [
+                "GPL-2.0"
+            ],
+            "description": "eZ Publish LegacyStack (4.x)",
+            "homepage": "http://share.ez.no",
+            "support": {
+                "source": "https://github.com/Opencontent/ezpublish-legacy/tree/consorzioweb"
+            },
+            "time": "2019-01-30T13:41:17+00:00"
+        },
+        {
+            "name": "ezsystems/ezpublish-legacy-installer",
+            "version": "dev-settings",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Opencontent/ezpublish-legacy-installer.git",
+                "reference": "38e402c8a392da27d985673d85776a949ec2e191"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Opencontent/ezpublish-legacy-installer/zipball/38e402c8a392da27d985673d85776a949ec2e191",
+                "reference": "38e402c8a392da27d985673d85776a949ec2e191",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "eZ\\Publish\\Composer\\InstallerPlugin"
+            },
+            "autoload": {
+                "psr-0": {
+                    "eZ\\Publish\\Composer": "src/"
+                }
+            },
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Jérôme Vieilledent",
+                    "email": "jerome.vieilledent@ez.no"
+                },
+                {
+                    "name": "Gaetano Giunta",
+                    "email": "gaetano.giunta@ez.no"
+                }
+            ],
+            "description": "Installer for eZ Publish legacy extensions and legacy kernel itself.",
+            "support": {
+                "source": "https://github.com/Opencontent/ezpublish-legacy-installer/tree/settings"
+            },
+            "time": "2017-11-10T12:56:20+00:00"
+        },
+        {
+            "name": "ezsystems/ezstarrating-ls-extension",
+            "version": "v5.4.0-beta1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ezsystems/ezstarrating-ls-extension.git",
+                "reference": "c6591269b45d6d3e5752c319a1cc52f5d0ae492c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ezsystems/ezstarrating-ls-extension/zipball/c6591269b45d6d3e5752c319a1cc52f5d0ae492c",
+                "reference": "c6591269b45d6d3e5752c319a1cc52f5d0ae492c",
+                "shasum": ""
+            },
+            "require": {
+                "ezsystems/ezpublish-legacy-installer": "*"
+            },
+            "suggest": {
+                "ezsystems/ezdemo-ls-extension": "~5.4@beta",
+                "ezsystems/ezflow-ls-extension": "~5.4@beta",
+                "ezsystems/ezwebin-ls-extension": "~5.4@beta"
+            },
+            "type": "ezpublish-legacy-extension",
+            "extra": {
+                "ezpublish-legacy-extension-name": "ezstarrating"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "eZ Publish dev-team & eZ Community",
+                    "homepage": "https://github.com/ezsystems/ezstarrating-extension"
+                }
+            ],
+            "description": "eZ Publish Legacy starrating extension",
+            "time": "2014-11-01T17:15:47+00:00"
+        },
+        {
+            "name": "ezsystems/eztags-ls",
+            "version": "2.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ezsystems/eztags.git",
+                "reference": "9ca78b14b49b0a3b62208049cb8778ed93e7909f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ezsystems/eztags/zipball/9ca78b14b49b0a3b62208049cb8778ed93e7909f",
+                "reference": "9ca78b14b49b0a3b62208049cb8778ed93e7909f",
+                "shasum": ""
+            },
+            "require": {
+                "ezsystems/ezpublish-legacy-installer": "*"
+            },
+            "type": "ezpublish-legacy-extension",
+            "extra": {
+                "ezpublish-legacy-extension-name": "eztags",
+                "branch-alias": {
+                    "dev-master": "2.2.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Netgen",
+                    "homepage": "http://www.netgenlabs.com"
+                },
+                {
+                    "name": "eZ Publish dev-team & eZ Community",
+                    "homepage": "https://github.com/ezsystems/eztags/contributors"
+                }
+            ],
+            "description": "eZ Tags is an extension for eZ Publish, providing more functionality for tagging content objects than ezkeyword datatype included in eZ Publish kernel.",
+            "time": "2016-10-31T11:34:18+00:00"
+        },
+        {
+            "name": "ezsystems/ezwt-ls-extension",
+            "version": "v5.4.0-beta1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ezsystems/ezwt-ls-extension.git",
+                "reference": "f03adadba1ceda654880f6024fe7bcdafe9669b9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ezsystems/ezwt-ls-extension/zipball/f03adadba1ceda654880f6024fe7bcdafe9669b9",
+                "reference": "f03adadba1ceda654880f6024fe7bcdafe9669b9",
+                "shasum": ""
+            },
+            "require": {
+                "ezsystems/ezpublish-legacy-installer": "*"
+            },
+            "type": "ezpublish-legacy-extension",
+            "extra": {
+                "ezpublish-legacy-extension-name": "ezwt"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "eZ Publish dev-team & eZ Community",
+                    "homepage": "https://github.com/ezsystems/ezwt"
+                }
+            ],
+            "description": "eZ Publish Legacy website toolbar extension",
+            "time": "2014-05-20T19:53:34+00:00"
+        },
+        {
+            "name": "guzzlehttp/guzzle",
+            "version": "6.5.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/guzzle.git",
+                "reference": "400cefd25a23a3098486bfb52685b5367a464171"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/400cefd25a23a3098486bfb52685b5367a464171",
+                "reference": "400cefd25a23a3098486bfb52685b5367a464171",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "guzzlehttp/promises": "^1.0",
+                "guzzlehttp/psr7": "^1.6.1",
+                "php": ">=5.5"
+            },
+            "require-dev": {
+                "ext-curl": "*",
+                "phpunit/phpunit": "^4.8.35 || ^5.7 || ^6.4 || ^7.0",
+                "psr/log": "^1.1"
+            },
+            "suggest": {
+                "ext-intl": "Required for Internationalized Domain Name (IDN) support",
+                "psr/log": "Required for using the Log middleware"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "6.5-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "GuzzleHttp\\": "src/"
+                },
+                "files": [
+                    "src/functions_include.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                }
+            ],
+            "description": "Guzzle is a PHP HTTP client library",
+            "homepage": "http://guzzlephp.org/",
+            "keywords": [
+                "client",
+                "curl",
+                "framework",
+                "http",
+                "http client",
+                "rest",
+                "web service"
+            ],
+            "time": "2019-12-30T04:52:42+00:00"
+        },
+        {
+            "name": "guzzlehttp/promises",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/promises.git",
+                "reference": "89b1a76b7fda5853401297dc4b2a093cba1fda23"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/promises/zipball/89b1a76b7fda5853401297dc4b2a093cba1fda23",
+                "reference": "89b1a76b7fda5853401297dc4b2a093cba1fda23",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.7.27 || ^7.5"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "GuzzleHttp\\Promise\\": "src/"
+                },
+                "files": [
+                    "src/functions_include.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                }
+            ],
+            "description": "Guzzle promises library",
+            "keywords": [
+                "promise"
+            ],
+            "time": "2020-02-15T23:33:03+00:00"
+        },
+        {
+            "name": "guzzlehttp/psr7",
+            "version": "1.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/psr7.git",
+                "reference": "c73b502efd02beb2602500aa36793fb405e383ac"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/c73b502efd02beb2602500aa36793fb405e383ac",
+                "reference": "c73b502efd02beb2602500aa36793fb405e383ac",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0",
+                "psr/http-message": "~1.0",
+                "ralouphie/getallheaders": "^2.0.5 || ^3.0.0"
+            },
+            "provide": {
+                "psr/http-message-implementation": "1.0"
+            },
+            "require-dev": {
+                "ext-zlib": "*",
+                "phpunit/phpunit": "~4.8.36 || ^5.7.27 || ^6.5.8"
+            },
+            "suggest": {
+                "laminas/laminas-httphandlerrunner": "Emit PSR-7 responses"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.6-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "GuzzleHttp\\Psr7\\": "src/"
+                },
+                "files": [
+                    "src/functions_include.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                },
+                {
+                    "name": "Tobias Schultze",
+                    "homepage": "https://github.com/Tobion"
+                }
+            ],
+            "description": "PSR-7 message implementation that also provides common utility methods",
+            "keywords": [
+                "http",
+                "message",
+                "psr-7",
+                "request",
+                "response",
+                "stream",
+                "uri",
+                "url"
+            ],
+            "time": "2020-02-12T23:13:46+00:00"
+        },
+        {
+            "name": "lolautruche/sqliimport",
+            "version": "v1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lolautruche/sqliimport.git",
+                "reference": "76a7cc4ef504cf2c2e2dc96faff156217fe1ceca"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lolautruche/sqliimport/zipball/76a7cc4ef504cf2c2e2dc96faff156217fe1ceca",
+                "reference": "76a7cc4ef504cf2c2e2dc96faff156217fe1ceca",
+                "shasum": ""
+            },
+            "require": {
+                "ezsystems/ezpublish-legacy-installer": "*"
+            },
+            "type": "ezpublish-legacy-extension",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Jerome Vieilledent",
+                    "email": "lolautruche@gmail.com"
+                }
+            ],
+            "description": "eZ Publish legacy extension for importing external content",
+            "time": "2015-11-18T08:18:09+00:00"
+        },
+        {
+            "name": "mtdowling/jmespath.php",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jmespath/jmespath.php.git",
+                "reference": "52168cb9472de06979613d365c7f1ab8798be895"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jmespath/jmespath.php/zipball/52168cb9472de06979613d365c7f1ab8798be895",
+                "reference": "52168cb9472de06979613d365c7f1ab8798be895",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0",
+                "symfony/polyfill-mbstring": "^1.4"
+            },
+            "require-dev": {
+                "composer/xdebug-handler": "^1.2",
+                "phpunit/phpunit": "^4.8.36|^7.5.15"
+            },
+            "bin": [
+                "bin/jp.php"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.5-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "JmesPath\\": "src/"
+                },
+                "files": [
+                    "src/JmesPath.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                }
+            ],
+            "description": "Declaratively specify how to extract elements from a JSON document",
+            "keywords": [
+                "json",
+                "jsonpath"
+            ],
+            "time": "2019-12-30T18:03:34+00:00"
+        },
+        {
+            "name": "opencontent/easyvocs_connector-ls",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/OpencontentCoop/easyvocs_connector.git",
+                "reference": "398d54d4e637174e59bc2b0eda46cf17fed1bbcd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/OpencontentCoop/easyvocs_connector/zipball/398d54d4e637174e59bc2b0eda46cf17fed1bbcd",
+                "reference": "398d54d4e637174e59bc2b0eda46cf17fed1bbcd",
+                "shasum": ""
+            },
+            "require": {
+                "ezsystems/ezpublish-legacy-installer": "*"
+            },
+            "type": "ezpublish-legacy-extension",
+            "extra": {
+                "ezpublish-legacy-extension-name": "easyvocs_connector"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "OpenContent",
+                    "homepage": "http://www.opencontent.it"
+                }
+            ],
+            "description": "OpenContent EasyVocs Connector",
+            "time": "2019-06-21T08:58:14+00:00"
+        },
+        {
+            "name": "opencontent/ezpostgresqlcluster-ls",
+            "version": "dev-md5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Opencontent/ezpostgresqlcluster.git",
+                "reference": "db456e4e60217f56ac994b99e84b813929f51a02"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Opencontent/ezpostgresqlcluster/zipball/db456e4e60217f56ac994b99e84b813929f51a02",
+                "reference": "db456e4e60217f56ac994b99e84b813929f51a02",
+                "shasum": ""
+            },
+            "require": {
+                "ezsystems/ezpublish-legacy-installer": "*"
+            },
+            "type": "ezpublish-legacy-extension",
+            "extra": {
+                "ezpublish-legacy-extension-name": "ezpostgresqlcluster"
+            },
+            "license": [
+                "GPL-2.0"
+            ],
+            "description": "PostgreSQL Cluster",
+            "support": {
+                "source": "https://github.com/Opencontent/ezpostgresqlcluster/tree/md5"
+            },
+            "time": "2019-07-01T12:52:55+00:00"
+        },
+        {
+            "name": "opencontent/ocbinarynullparser-ls",
+            "version": "1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/OpencontentCoop/ocbinarynullparser.git",
+                "reference": "60e7340fed062d2be55a4cbeae0727489849bbde"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/OpencontentCoop/ocbinarynullparser/zipball/60e7340fed062d2be55a4cbeae0727489849bbde",
+                "reference": "60e7340fed062d2be55a4cbeae0727489849bbde",
+                "shasum": ""
+            },
+            "require": {
+                "ezsystems/ezpublish-legacy-installer": "*"
+            },
+            "type": "ezpublish-legacy-extension",
+            "extra": {
+                "ezpublish-legacy-extension-name": "ocbinarynullparser"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "OpenContent",
+                    "homepage": "http://www.opencontent.it"
+                }
+            ],
+            "description": "OpenContent Binary Null Parser",
+            "time": "2016-03-15T21:53:26+00:00"
+        },
+        {
+            "name": "opencontent/ocbootstrap-ls",
+            "version": "1.9.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/OpencontentCoop/ocbootstrap.git",
+                "reference": "cbc8070f79d1ccd4f75ceef7bfa03bd05abb6ffa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/OpencontentCoop/ocbootstrap/zipball/cbc8070f79d1ccd4f75ceef7bfa03bd05abb6ffa",
+                "reference": "cbc8070f79d1ccd4f75ceef7bfa03bd05abb6ffa",
+                "shasum": ""
+            },
+            "require": {
+                "ezsystems/ezpublish-legacy-installer": "*"
+            },
+            "type": "ezpublish-legacy-extension",
+            "extra": {
+                "ezpublish-legacy-extension-name": "ocbootstrap"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "OpenContent",
+                    "homepage": "http://www.opencontent.it"
+                }
+            ],
+            "description": "OpenContent Bootstrap Base Design",
+            "time": "2020-03-10T13:59:08+00:00"
+        },
+        {
+            "name": "opencontent/occhangeobjectdate-ls",
+            "version": "1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/OpencontentCoop/occhangeobjectdate.git",
+                "reference": "3f918890a2160e2f969d41985479e6ed0501376c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/OpencontentCoop/occhangeobjectdate/zipball/3f918890a2160e2f969d41985479e6ed0501376c",
+                "reference": "3f918890a2160e2f969d41985479e6ed0501376c",
+                "shasum": ""
+            },
+            "require": {
+                "ezsystems/ezpublish-legacy-installer": "*"
+            },
+            "type": "ezpublish-legacy-extension",
+            "extra": {
+                "ezpublish-legacy-extension-name": "occhangeobjectdate"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "OpenContent",
+                    "homepage": "http://www.opencontent.it"
+                }
+            ],
+            "description": "Opencontent Change Object Date",
+            "time": "2016-02-09T22:55:44+00:00"
+        },
+        {
+            "name": "opencontent/occodicefiscale-ls",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/OpencontentCoop/occodicefiscale.git",
+                "reference": "542aa999834aa30fc8fbec702d924f3cd02b82ad"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/OpencontentCoop/occodicefiscale/zipball/542aa999834aa30fc8fbec702d924f3cd02b82ad",
+                "reference": "542aa999834aa30fc8fbec702d924f3cd02b82ad",
+                "shasum": ""
+            },
+            "require": {
+                "ezsystems/ezpublish-legacy-installer": "*"
+            },
+            "type": "ezpublish-legacy-extension",
+            "extra": {
+                "ezpublish-legacy-extension-name": "occodicefiscale"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "OpenContent",
+                    "homepage": "http://www.opencontent.it"
+                }
+            ],
+            "description": "OpenContent Codice Fiscale Datatype",
+            "time": "2020-01-13T19:45:26+00:00"
+        },
+        {
+            "name": "opencontent/ocembed-ls",
+            "version": "1.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/OpencontentCoop/ocembed.git",
+                "reference": "e8c990a9bcc284c2f48ac5688ee6e66ee6dd8043"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/OpencontentCoop/ocembed/zipball/e8c990a9bcc284c2f48ac5688ee6e66ee6dd8043",
+                "reference": "e8c990a9bcc284c2f48ac5688ee6e66ee6dd8043",
+                "shasum": ""
+            },
+            "require": {
+                "ezsystems/ezpublish-legacy-installer": "*"
+            },
+            "type": "ezpublish-legacy-extension",
+            "extra": {
+                "ezpublish-legacy-extension-name": "ocembed"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "OpenContent",
+                    "homepage": "http://www.opencontent.it"
+                }
+            ],
+            "description": "Opencontent oEmbed operators",
+            "time": "2019-01-21T18:39:05+00:00"
+        },
+        {
+            "name": "opencontent/ocevents-ls",
+            "version": "1.1.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/OpencontentCoop/ocevents.git",
+                "reference": "99fa160ec8221ff1c1aa59875d2eaa38f3d96419"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/OpencontentCoop/ocevents/zipball/99fa160ec8221ff1c1aa59875d2eaa38f3d96419",
+                "reference": "99fa160ec8221ff1c1aa59875d2eaa38f3d96419",
+                "shasum": ""
+            },
+            "require": {
+                "ezsystems/ezpublish-legacy-installer": "*"
+            },
+            "type": "ezpublish-legacy-extension",
+            "extra": {
+                "ezpublish-legacy-extension-name": "ocevents"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "OpenContent",
+                    "homepage": "http://www.opencontent.it"
+                }
+            ],
+            "description": "OpenContent Events: eZPublish Legacy extension for manage recurring events",
+            "time": "2020-02-25T08:36:29+00:00"
+        },
+        {
+            "name": "opencontent/ocexportas-ls",
+            "version": "1.3.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/OpencontentCoop/ocexportas.git",
+                "reference": "55ab4c10b4039432593d89c045e6f479ba8c1e08"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/OpencontentCoop/ocexportas/zipball/55ab4c10b4039432593d89c045e6f479ba8c1e08",
+                "reference": "55ab4c10b4039432593d89c045e6f479ba8c1e08",
+                "shasum": ""
+            },
+            "require": {
+                "ezsystems/ezpublish-legacy-installer": "*"
+            },
+            "type": "ezpublish-legacy-extension",
+            "extra": {
+                "ezpublish-legacy-extension-name": "ocexportas"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "OpenContent",
+                    "homepage": "http://www.opencontent.it"
+                }
+            ],
+            "description": "Opencontent Export content As XML or CSV",
+            "time": "2020-01-27T21:33:37+00:00"
+        },
+        {
+            "name": "opencontent/ocgdprtools-ls",
+            "version": "1.4.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/OpencontentCoop/ocgdprtools.git",
+                "reference": "989becad655c8f2e2753a079237fbcc1fc7e9d95"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/OpencontentCoop/ocgdprtools/zipball/989becad655c8f2e2753a079237fbcc1fc7e9d95",
+                "reference": "989becad655c8f2e2753a079237fbcc1fc7e9d95",
+                "shasum": ""
+            },
+            "require": {
+                "ezsystems/ezpublish-legacy-installer": "*"
+            },
+            "type": "ezpublish-legacy-extension",
+            "extra": {
+                "ezpublish-legacy-extension-name": "ocgdprtools"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "OpenContent",
+                    "homepage": "http://www.opencontent.it"
+                }
+            ],
+            "description": "OpenContent GDPR Tools",
+            "time": "2020-01-13T21:28:11+00:00"
+        },
+        {
+            "name": "opencontent/ocmap-ls",
+            "version": "1.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/OpencontentCoop/ocmap.git",
+                "reference": "93c8432bea4747611cd05f62347ef2d35b2d7c87"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/OpencontentCoop/ocmap/zipball/93c8432bea4747611cd05f62347ef2d35b2d7c87",
+                "reference": "93c8432bea4747611cd05f62347ef2d35b2d7c87",
+                "shasum": ""
+            },
+            "require": {
+                "ezsystems/ezpublish-legacy-installer": "*"
+            },
+            "type": "ezpublish-legacy-extension",
+            "extra": {
+                "ezpublish-legacy-extension-name": "ocmap"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "OpenContent",
+                    "homepage": "http://www.opencontent.it"
+                }
+            ],
+            "description": "Opencontent Map",
+            "time": "2020-01-19T01:32:52+00:00"
+        },
+        {
+            "name": "opencontent/ocmultibinary-ls",
+            "version": "1.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/OpencontentCoop/ocmultibinary.git",
+                "reference": "0b80299848c073bbe281badb2dfbf94c239c1bfa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/OpencontentCoop/ocmultibinary/zipball/0b80299848c073bbe281badb2dfbf94c239c1bfa",
+                "reference": "0b80299848c073bbe281badb2dfbf94c239c1bfa",
+                "shasum": ""
+            },
+            "require": {
+                "ezsystems/ezpublish-legacy-installer": "*"
+            },
+            "type": "ezpublish-legacy-extension",
+            "extra": {
+                "ezpublish-legacy-extension-name": "ocmultibinary"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "OpenContent",
+                    "homepage": "http://www.opencontent.it"
+                }
+            ],
+            "description": "Opencontent Multibinary eZPublish Legacy Datatype",
+            "time": "2020-02-05T15:44:14+00:00"
+        },
+        {
+            "name": "opencontent/ocopendata-ls",
+            "version": "2.23.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/OpencontentCoop/ocopendata.git",
+                "reference": "5eaf587e1ca9adbcbfea6c282b01122e1080b9ac"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/OpencontentCoop/ocopendata/zipball/5eaf587e1ca9adbcbfea6c282b01122e1080b9ac",
+                "reference": "5eaf587e1ca9adbcbfea6c282b01122e1080b9ac",
+                "shasum": ""
+            },
+            "require": {
+                "ezsystems/ezpublish-legacy-installer": "*"
+            },
+            "type": "ezpublish-legacy-extension",
+            "extra": {
+                "ezpublish-legacy-extension-name": "ocopendata"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "OpenContent",
+                    "homepage": "http://www.opencontent.it"
+                }
+            ],
+            "description": "Opencontent OpenData Extension",
+            "time": "2020-03-13T11:29:46+00:00"
+        },
+        {
+            "name": "opencontent/ocopendata_forms-ls",
+            "version": "1.6.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/OpencontentCoop/ocopendata_forms.git",
+                "reference": "a68c86ae200f683746c47ba9c37839b8a39fa2c3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/OpencontentCoop/ocopendata_forms/zipball/a68c86ae200f683746c47ba9c37839b8a39fa2c3",
+                "reference": "a68c86ae200f683746c47ba9c37839b8a39fa2c3",
+                "shasum": ""
+            },
+            "require": {
+                "ezsystems/ezpublish-legacy-installer": "*"
+            },
+            "type": "ezpublish-legacy-extension",
+            "extra": {
+                "ezpublish-legacy-extension-name": "ocopendata_forms"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "OpenContent",
+                    "homepage": "http://www.opencontent.it"
+                }
+            ],
+            "description": "Opencontent OpenData Forms Extension",
+            "time": "2020-02-19T00:11:46+00:00"
+        },
+        {
+            "name": "opencontent/ocopendata_forms_design-ls",
+            "version": "1.4.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/OpencontentCoop/ocopendata_forms_design.git",
+                "reference": "b1d8a90697ba08cb1b42d24962b71c1a03451c7a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/OpencontentCoop/ocopendata_forms_design/zipball/b1d8a90697ba08cb1b42d24962b71c1a03451c7a",
+                "reference": "b1d8a90697ba08cb1b42d24962b71c1a03451c7a",
+                "shasum": ""
+            },
+            "require": {
+                "ezsystems/ezpublish-legacy-installer": "*"
+            },
+            "type": "ezpublish-legacy-extension",
+            "extra": {
+                "ezpublish-legacy-extension-name": "ocopendata_forms_design"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "OpenContent",
+                    "homepage": "http://www.opencontent.it"
+                }
+            ],
+            "description": "Opencontent OpenData Forms Design Extension",
+            "time": "2019-02-05T16:08:21+00:00"
+        },
+        {
+            "name": "opencontent/ocoperatorscollection-ls",
+            "version": "1.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/OpencontentCoop/ocoperatorscollection.git",
+                "reference": "b7380f123936326f201cde710377d628a7bab0e9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/OpencontentCoop/ocoperatorscollection/zipball/b7380f123936326f201cde710377d628a7bab0e9",
+                "reference": "b7380f123936326f201cde710377d628a7bab0e9",
+                "shasum": ""
+            },
+            "require": {
+                "ezsystems/ezpublish-legacy-installer": "*"
+            },
+            "type": "ezpublish-legacy-extension",
+            "extra": {
+                "ezpublish-legacy-extension-name": "ocoperatorscollection"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "OpenContent",
+                    "homepage": "http://www.opencontent.it"
+                }
+            ],
+            "description": "Opencontent Template Operator Collection",
+            "time": "2019-04-15T11:54:35+00:00"
+        },
+        {
+            "name": "opencontent/ocrecaptcha-ls",
+            "version": "1.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/OpencontentCoop/ocrecaptcha.git",
+                "reference": "f41d81ae6b58a2d5db7324f0ee6c17e4c94c5421"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/OpencontentCoop/ocrecaptcha/zipball/f41d81ae6b58a2d5db7324f0ee6c17e4c94c5421",
+                "reference": "f41d81ae6b58a2d5db7324f0ee6c17e4c94c5421",
+                "shasum": ""
+            },
+            "require": {
+                "ezsystems/ezpublish-legacy-installer": "*"
+            },
+            "type": "ezpublish-legacy-extension",
+            "extra": {
+                "ezpublish-legacy-extension-name": "ocrecaptcha"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "OpenContent",
+                    "homepage": "http://www.opencontent.it"
+                }
+            ],
+            "description": "Opencontent Google Recaptcha",
+            "time": "2019-09-06T15:44:56+00:00"
+        },
+        {
+            "name": "opencontent/ocrss-ls",
+            "version": "1.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/OpencontentCoop/ocrss.git",
+                "reference": "6af7105319eb045bfbd76b08e15fc1358a186974"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/OpencontentCoop/ocrss/zipball/6af7105319eb045bfbd76b08e15fc1358a186974",
+                "reference": "6af7105319eb045bfbd76b08e15fc1358a186974",
+                "shasum": ""
+            },
+            "require": {
+                "ezsystems/ezpublish-legacy-installer": "*"
+            },
+            "type": "ezpublish-legacy-extension",
+            "extra": {
+                "ezpublish-legacy-extension-name": "ocrss"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "OpenContent",
+                    "homepage": "http://www.opencontent.it"
+                }
+            ],
+            "description": "Opencontent RSS",
+            "time": "2018-11-20T11:13:28+00:00"
+        },
+        {
+            "name": "opencontent/ocsearchtools-ls",
+            "version": "1.10.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/OpencontentCoop/ocsearchtools.git",
+                "reference": "0996fb7bf31889b649bb12a90d4328f8f04803d3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/OpencontentCoop/ocsearchtools/zipball/0996fb7bf31889b649bb12a90d4328f8f04803d3",
+                "reference": "0996fb7bf31889b649bb12a90d4328f8f04803d3",
+                "shasum": ""
+            },
+            "require": {
+                "ezsystems/ezpublish-legacy-installer": "*"
+            },
+            "type": "ezpublish-legacy-extension",
+            "extra": {
+                "ezpublish-legacy-extension-name": "ocsearchtools"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "OpenContent",
+                    "homepage": "http://www.opencontent.it"
+                }
+            ],
+            "description": "Opencontent Search Tools",
+            "time": "2019-11-27T07:57:48+00:00"
+        },
+        {
+            "name": "opencontent/ocsupport-ls",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/OpencontentCoop/ocsupport.git",
+                "reference": "49a42aa6c699f589aa7b097e4dc7237cf01fdb25"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/OpencontentCoop/ocsupport/zipball/49a42aa6c699f589aa7b097e4dc7237cf01fdb25",
+                "reference": "49a42aa6c699f589aa7b097e4dc7237cf01fdb25",
+                "shasum": ""
+            },
+            "require": {
+                "ezsystems/ezpublish-legacy-installer": "*"
+            },
+            "type": "ezpublish-legacy-extension",
+            "extra": {
+                "ezpublish-legacy-extension-name": "ocsupport"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "OpenContent",
+                    "homepage": "http://www.opencontent.it"
+                }
+            ],
+            "description": "OpenContent Support Tools",
+            "time": "2019-04-10T07:11:22+00:00"
+        },
+        {
+            "name": "opencontent/opencontent-project-installer",
+            "version": "1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/OpencontentCoop/opencontent-project-installer.git",
+                "reference": "958ea6c370eb97202756d484205b3a49ae7206a2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/OpencontentCoop/opencontent-project-installer/zipball/958ea6c370eb97202756d484205b3a49ae7206a2",
+                "reference": "958ea6c370eb97202756d484205b3a49ae7206a2",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Opencontent\\ProjectInstaller\\Composer": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Luca Realdi",
+                    "email": "lr@opencontent.it"
+                }
+            ],
+            "description": "Installer for OpenContent project.",
+            "time": "2016-02-19T13:41:02+00:00"
+        },
+        {
+            "name": "opencontent/openpa-ls",
+            "version": "2.37.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/OpencontentCoop/openpa.git",
+                "reference": "c6ea7e365ecd577711d941709b6c716761be9adb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/OpencontentCoop/openpa/zipball/c6ea7e365ecd577711d941709b6c716761be9adb",
+                "reference": "c6ea7e365ecd577711d941709b6c716761be9adb",
+                "shasum": ""
+            },
+            "type": "ezpublish-legacy-extension",
+            "extra": {
+                "ezpublish-legacy-extension-name": "openpa"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "OpenContent",
+                    "homepage": "http://www.opencontent.it"
+                }
+            ],
+            "description": "OpenContent OpenPA",
+            "time": "2020-03-09T10:35:53+00:00"
+        },
+        {
+            "name": "opencontent/openpa_bootstrapitalia-ls",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/OpencontentCoop/openpa_bootstrapitalia.git",
+                "reference": "371676005c9619a298c608277150b3881478d14a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/OpencontentCoop/openpa_bootstrapitalia/zipball/371676005c9619a298c608277150b3881478d14a",
+                "reference": "371676005c9619a298c608277150b3881478d14a",
+                "shasum": ""
+            },
+            "require": {
+                "ezsystems/ezpublish-legacy-installer": "*",
+                "opencontent/ocbootstrap-ls": "*",
+                "opencontent/openpa-ls": "*"
+            },
+            "type": "ezpublish-legacy-extension",
+            "extra": {
+                "ezpublish-legacy-extension-name": "openpa_bootstrapitalia"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "OpenContent",
+                    "homepage": "http://www.opencontent.it"
+                }
+            ],
+            "description": "Opencontent OpenPA Bootstrap Italia",
+            "time": "2020-03-12T18:24:07+00:00"
+        },
+        {
+            "name": "psr/http-message",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/http-message.git",
+                "reference": "efd67d1dc14a7ef4fc4e518e7dee91c271d524e4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/http-message/zipball/efd67d1dc14a7ef4fc4e518e7dee91c271d524e4",
+                "reference": "efd67d1dc14a7ef4fc4e518e7dee91c271d524e4",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Http\\Message\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for HTTP messages",
+            "homepage": "https://github.com/php-fig/http-message",
+            "keywords": [
+                "http",
+                "http-message",
+                "psr",
+                "psr-7",
+                "request",
+                "response"
+            ],
+            "time": "2019-08-29T13:16:46+00:00"
+        },
+        {
+            "name": "ralouphie/getallheaders",
+            "version": "3.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ralouphie/getallheaders.git",
+                "reference": "120b605dfeb996808c31b6477290a714d356e822"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ralouphie/getallheaders/zipball/120b605dfeb996808c31b6477290a714d356e822",
+                "reference": "120b605dfeb996808c31b6477290a714d356e822",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "require-dev": {
+                "php-coveralls/php-coveralls": "^2.1",
+                "phpunit/phpunit": "^5 || ^6.5"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/getallheaders.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ralph Khattar",
+                    "email": "ralph.khattar@gmail.com"
+                }
+            ],
+            "description": "A polyfill for getallheaders.",
+            "time": "2019-03-08T08:55:37+00:00"
+        },
+        {
+            "name": "symfony/polyfill-mbstring",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-mbstring.git",
+                "reference": "81ffd3a9c6d707be22e3012b827de1c9775fc5ac"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/81ffd3a9c6d707be22e3012b827de1c9775fc5ac",
+                "reference": "81ffd3a9c6d707be22e3012b827de1c9775fc5ac",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "suggest": {
+                "ext-mbstring": "For best performance"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.15-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Polyfill\\Mbstring\\": ""
+                },
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill for the Mbstring extension",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "mbstring",
+                "polyfill",
+                "portable",
+                "shim"
+            ],
+            "time": "2020-03-09T19:04:49+00:00"
+        },
+        {
+            "name": "zetacomponents/archive",
+            "version": "1.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zetacomponents/Archive.git",
+                "reference": "ffd0f7c37471563b2c5f64dcb6ec7fe3bcb23d20"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zetacomponents/Archive/zipball/ffd0f7c37471563b2c5f64dcb6ec7fe3bcb23d20",
+                "reference": "ffd0f7c37471563b2c5f64dcb6ec7fe3bcb23d20",
+                "shasum": ""
+            },
+            "require": {
+                "zetacomponents/base": "~1.8"
+            },
+            "require-dev": {
+                "zetacomponents/unit-test": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Sergey Alexeev"
+                },
+                {
+                    "name": "Sebastian Bergmann"
+                },
+                {
+                    "name": "Jan Borsodi"
+                },
+                {
+                    "name": "Raymond Bosman"
+                },
+                {
+                    "name": "Frederik Holljen"
+                },
+                {
+                    "name": "Kore Nordmann"
+                },
+                {
+                    "name": "Derick Rethans"
+                },
+                {
+                    "name": "Vadym Savchuk"
+                },
+                {
+                    "name": "Tobias Schlitt"
+                },
+                {
+                    "name": "Alexandru Stanoi"
+                }
+            ],
+            "description": "The component allows you to create, modify, and extract archive files of  various formats.  The currently supported archives formats are Tar (with  the flavours: ustar, v7, pax, and gnu) and Zip.",
+            "homepage": "https://github.com/zetacomponents",
+            "time": "2014-09-27T19:26:09+00:00"
+        },
+        {
+            "name": "zetacomponents/authentication",
+            "version": "1.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zetacomponents/Authentication.git",
+                "reference": "32f41debff35afa0b966f5f424b4b5dacad94c9a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zetacomponents/Authentication/zipball/32f41debff35afa0b966f5f424b4b5dacad94c9a",
+                "reference": "32f41debff35afa0b966f5f424b4b5dacad94c9a",
+                "shasum": ""
+            },
+            "require": {
+                "zetacomponents/base": "~1.8"
+            },
+            "require-dev": {
+                "zetacomponents/unit-test": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Sergey Alexeev"
+                },
+                {
+                    "name": "Sebastian Bergmann"
+                },
+                {
+                    "name": "Jan Borsodi"
+                },
+                {
+                    "name": "Raymond Bosman"
+                },
+                {
+                    "name": "Frederik Holljen"
+                },
+                {
+                    "name": "Kore Nordmann"
+                },
+                {
+                    "name": "Derick Rethans"
+                },
+                {
+                    "name": "Vadym Savchuk"
+                },
+                {
+                    "name": "Tobias Schlitt"
+                },
+                {
+                    "name": "Alexandru Stanoi"
+                }
+            ],
+            "description": "The purpose of the Authentication component is to provide support for different means of identification and authentication of users using different providers and protocols.",
+            "homepage": "https://github.com/zetacomponents",
+            "time": "2014-09-27T19:26:09+00:00"
+        },
+        {
+            "name": "zetacomponents/authentication-database-tiein",
+            "version": "1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zetacomponents/AuthenticationDatabaseTiein.git",
+                "reference": "d02222a254c730bba43d78afa054b2fe1d9466d0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zetacomponents/AuthenticationDatabaseTiein/zipball/d02222a254c730bba43d78afa054b2fe1d9466d0",
+                "reference": "d02222a254c730bba43d78afa054b2fe1d9466d0",
+                "shasum": ""
+            },
+            "require": {
+                "zetacomponents/authentication": "~1.3",
+                "zetacomponents/database": "~1.4"
+            },
+            "require-dev": {
+                "zetacomponents/unit-test": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Sergey Alexeev"
+                },
+                {
+                    "name": "Sebastian Bergmann"
+                },
+                {
+                    "name": "Jan Borsodi"
+                },
+                {
+                    "name": "Raymond Bosman"
+                },
+                {
+                    "name": "Frederik Holljen"
+                },
+                {
+                    "name": "Kore Nordmann"
+                },
+                {
+                    "name": "Derick Rethans"
+                },
+                {
+                    "name": "Vadym Savchuk"
+                },
+                {
+                    "name": "Tobias Schlitt"
+                },
+                {
+                    "name": "Alexandru Stanoi"
+                }
+            ],
+            "description": "The purpose of the Authentication component is to provide support for different means of identification and authentication of users using different providers and protocols.",
+            "homepage": "https://github.com/zetacomponents",
+            "time": "2014-09-27T19:26:09+00:00"
+        },
+        {
+            "name": "zetacomponents/base",
+            "version": "1.9.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zetacomponents/Base.git",
+                "reference": "489e20235989ddc97fdd793af31ac803972454f1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zetacomponents/Base/zipball/489e20235989ddc97fdd793af31ac803972454f1",
+                "reference": "489e20235989ddc97fdd793af31ac803972454f1",
+                "shasum": ""
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~5.7",
+                "zetacomponents/unit-test": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Sergey Alexeev"
+                },
+                {
+                    "name": "Sebastian Bergmann"
+                },
+                {
+                    "name": "Jan Borsodi"
+                },
+                {
+                    "name": "Raymond Bosman"
+                },
+                {
+                    "name": "Frederik Holljen"
+                },
+                {
+                    "name": "Kore Nordmann"
+                },
+                {
+                    "name": "Derick Rethans"
+                },
+                {
+                    "name": "Vadym Savchuk"
+                },
+                {
+                    "name": "Tobias Schlitt"
+                },
+                {
+                    "name": "Alexandru Stanoi"
+                }
+            ],
+            "description": "The Base package provides the basic infrastructure that all packages rely on. Therefore every component relies on this package.",
+            "homepage": "https://github.com/zetacomponents",
+            "time": "2017-11-28T11:30:00+00:00"
+        },
+        {
+            "name": "zetacomponents/cache",
+            "version": "1.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zetacomponents/Cache.git",
+                "reference": "5fefd1683373be515d081ea5cd4413cc70de0055"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zetacomponents/Cache/zipball/5fefd1683373be515d081ea5cd4413cc70de0055",
+                "reference": "5fefd1683373be515d081ea5cd4413cc70de0055",
+                "shasum": ""
+            },
+            "require": {
+                "zetacomponents/base": "~1.8"
+            },
+            "require-dev": {
+                "zetacomponents/unit-test": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Sergey Alexeev"
+                },
+                {
+                    "name": "Sebastian Bergmann"
+                },
+                {
+                    "name": "Jan Borsodi"
+                },
+                {
+                    "name": "Raymond Bosman"
+                },
+                {
+                    "name": "Frederik Holljen"
+                },
+                {
+                    "name": "Kore Nordmann"
+                },
+                {
+                    "name": "Derick Rethans"
+                },
+                {
+                    "name": "Vadym Savchuk"
+                },
+                {
+                    "name": "Tobias Schlitt"
+                },
+                {
+                    "name": "Alexandru Stanoi"
+                },
+                {
+                    "name": "Grady Kuhnline"
+                }
+            ],
+            "description": "A solution for caching, supporting multiple backends allowing you to specify the best performing solution for your caching-problem.",
+            "homepage": "https://github.com/zetacomponents",
+            "time": "2014-09-27T19:26:09+00:00"
+        },
+        {
+            "name": "zetacomponents/configuration",
+            "version": "1.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zetacomponents/Configuration.git",
+                "reference": "3885fb93ac59d69ff0ef721b33adfc613277a2f1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zetacomponents/Configuration/zipball/3885fb93ac59d69ff0ef721b33adfc613277a2f1",
+                "reference": "3885fb93ac59d69ff0ef721b33adfc613277a2f1",
+                "shasum": ""
+            },
+            "require": {
+                "zetacomponents/base": "~1.8"
+            },
+            "require-dev": {
+                "zetacomponents/unit-test": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Sergey Alexeev"
+                },
+                {
+                    "name": "Sebastian Bergmann"
+                },
+                {
+                    "name": "Jan Borsodi"
+                },
+                {
+                    "name": "Raymond Bosman"
+                },
+                {
+                    "name": "Frederik Holljen"
+                },
+                {
+                    "name": "Kore Nordmann"
+                },
+                {
+                    "name": "Derick Rethans"
+                },
+                {
+                    "name": "Vadym Savchuk"
+                },
+                {
+                    "name": "Tobias Schlitt"
+                },
+                {
+                    "name": "Alexandru Stanoi"
+                }
+            ],
+            "description": "A component that allows you to use configuration files in different formats. The formats include the standard .ini file, and an array based format.",
+            "homepage": "https://github.com/zetacomponents",
+            "time": "2014-09-27T19:26:09+00:00"
+        },
+        {
+            "name": "zetacomponents/console-tools",
+            "version": "1.7.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zetacomponents/ConsoleTools.git",
+                "reference": "1cee38174be119226727159bc8cf4ebb91b12a8e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zetacomponents/ConsoleTools/zipball/1cee38174be119226727159bc8cf4ebb91b12a8e",
+                "reference": "1cee38174be119226727159bc8cf4ebb91b12a8e",
+                "shasum": ""
+            },
+            "require": {
+                "zetacomponents/base": "~1.8"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~5.7",
+                "zetacomponents/unit-test": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Sergey Alexeev"
+                },
+                {
+                    "name": "Sebastian Bergmann"
+                },
+                {
+                    "name": "Jan Borsodi"
+                },
+                {
+                    "name": "Raymond Bosman"
+                },
+                {
+                    "name": "Frederik Holljen"
+                },
+                {
+                    "name": "Kore Nordmann"
+                },
+                {
+                    "name": "Derick Rethans"
+                },
+                {
+                    "name": "Vadym Savchuk"
+                },
+                {
+                    "name": "Tobias Schlitt"
+                },
+                {
+                    "name": "Alexandru Stanoi"
+                }
+            ],
+            "description": "A set of classes to do different actions with the console (also called shell). It can render a progress bar, tables and a status bar and contains a class for parsing command line options.",
+            "homepage": "https://github.com/zetacomponents",
+            "time": "2020-03-13T15:28:37+00:00"
+        },
+        {
+            "name": "zetacomponents/database",
+            "version": "1.5.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zetacomponents/Database.git",
+                "reference": "1750d34bf64b62f064c5b1aeb5374fbd06400904"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zetacomponents/Database/zipball/1750d34bf64b62f064c5b1aeb5374fbd06400904",
+                "reference": "1750d34bf64b62f064c5b1aeb5374fbd06400904",
+                "shasum": ""
+            },
+            "require": {
+                "zetacomponents/base": "~1.8"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~5.7",
+                "zetacomponents/database-schema": "~1.5",
+                "zetacomponents/unit-test": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Sergey Alexeev"
+                },
+                {
+                    "name": "Sebastian Bergmann"
+                },
+                {
+                    "name": "Jan Borsodi"
+                },
+                {
+                    "name": "Raymond Bosman"
+                },
+                {
+                    "name": "Frederik Holljen"
+                },
+                {
+                    "name": "Kore Nordmann"
+                },
+                {
+                    "name": "Derick Rethans"
+                },
+                {
+                    "name": "Vadym Savchuk"
+                },
+                {
+                    "name": "Tobias Schlitt"
+                },
+                {
+                    "name": "Alexandru Stanoi"
+                },
+                {
+                    "name": "Joel Arvidsson"
+                },
+                {
+                    "name": "Friedel Hill"
+                },
+                {
+                    "name": "Christian Michel"
+                }
+            ],
+            "description": "A lightweight database layer on top of PHP's PDO that allows you to utilize a database without having to take care of differences in SQL dialects.",
+            "homepage": "https://github.com/zetacomponents",
+            "time": "2017-11-28T10:55:26+00:00"
+        },
+        {
+            "name": "zetacomponents/debug",
+            "version": "1.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zetacomponents/Debug.git",
+                "reference": "e2a56f25db9b3ead4395ae724b70b5ad6c730326"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zetacomponents/Debug/zipball/e2a56f25db9b3ead4395ae724b70b5ad6c730326",
+                "reference": "e2a56f25db9b3ead4395ae724b70b5ad6c730326",
+                "shasum": ""
+            },
+            "require": {
+                "zetacomponents/base": "*"
+            },
+            "require-dev": {
+                "zetacomponents/unit-test": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Sergey Alexeev"
+                },
+                {
+                    "name": "Sebastian Bergmann"
+                },
+                {
+                    "name": "Jan Borsodi"
+                },
+                {
+                    "name": "Raymond Bosman"
+                },
+                {
+                    "name": "Frederik Holljen"
+                },
+                {
+                    "name": "Kore Nordmann"
+                },
+                {
+                    "name": "Derick Rethans"
+                },
+                {
+                    "name": "Vadym Savchuk"
+                },
+                {
+                    "name": "Tobias Schlitt"
+                },
+                {
+                    "name": "Alexandru Stanoi"
+                }
+            ],
+            "description": "This component provides a set of classes that help you to debug an application. It provides timers and report generators for different formats that give a summary of warnings and errors that occurred within your application.",
+            "homepage": "https://github.com/zetacomponents",
+            "time": "2014-09-27T19:26:09+00:00"
+        },
+        {
+            "name": "zetacomponents/event-log",
+            "version": "1.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zetacomponents/EventLog.git",
+                "reference": "ef624d12f4c367e4211573ae3633943f727acdf7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zetacomponents/EventLog/zipball/ef624d12f4c367e4211573ae3633943f727acdf7",
+                "reference": "ef624d12f4c367e4211573ae3633943f727acdf7",
+                "shasum": ""
+            },
+            "require": {
+                "zetacomponents/base": "~1.8"
+            },
+            "require-dev": {
+                "zetacomponents/unit-test": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Sergey Alexeev"
+                },
+                {
+                    "name": "Sebastian Bergmann"
+                },
+                {
+                    "name": "Jan Borsodi"
+                },
+                {
+                    "name": "Raymond Bosman"
+                },
+                {
+                    "name": "Frederik Holljen"
+                },
+                {
+                    "name": "Kore Nordmann"
+                },
+                {
+                    "name": "Derick Rethans"
+                },
+                {
+                    "name": "Vadym Savchuk"
+                },
+                {
+                    "name": "Tobias Schlitt"
+                },
+                {
+                    "name": "Alexandru Stanoi"
+                }
+            ],
+            "description": "Allows you to log events or audit trails into files or other storage spaces in different formats.",
+            "homepage": "https://github.com/zetacomponents",
+            "time": "2014-09-27T19:26:09+00:00"
+        },
+        {
+            "name": "zetacomponents/feed",
+            "version": "1.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zetacomponents/Feed.git",
+                "reference": "925d8bc33cf13a9f5aecf2c3e37a32c85b0c8861"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zetacomponents/Feed/zipball/925d8bc33cf13a9f5aecf2c3e37a32c85b0c8861",
+                "reference": "925d8bc33cf13a9f5aecf2c3e37a32c85b0c8861",
+                "shasum": ""
+            },
+            "require": {
+                "zetacomponents/base": "~1.8"
+            },
+            "require-dev": {
+                "zetacomponents/unit-test": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Sergey Alexeev"
+                },
+                {
+                    "name": "Sebastian Bergmann"
+                },
+                {
+                    "name": "Jan Borsodi"
+                },
+                {
+                    "name": "Raymond Bosman"
+                },
+                {
+                    "name": "Frederik Holljen"
+                },
+                {
+                    "name": "Kore Nordmann"
+                },
+                {
+                    "name": "Derick Rethans"
+                },
+                {
+                    "name": "Vadym Savchuk"
+                },
+                {
+                    "name": "Tobias Schlitt"
+                },
+                {
+                    "name": "Alexandru Stanoi"
+                }
+            ],
+            "description": "This component handles parsing and creating RSS1, RSS2 and ATOM feeds, with support for different feed modules (dc, content, creativeCommons, geo, iTunes).",
+            "homepage": "https://github.com/zetacomponents",
+            "time": "2014-09-27T19:26:09+00:00"
+        },
+        {
+            "name": "zetacomponents/image-analysis",
+            "version": "1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zetacomponents/ImageAnalysis.git",
+                "reference": "7d49a1975709b7bca861dce8604acf59592f7205"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zetacomponents/ImageAnalysis/zipball/7d49a1975709b7bca861dce8604acf59592f7205",
+                "reference": "7d49a1975709b7bca861dce8604acf59592f7205",
+                "shasum": ""
+            },
+            "require": {
+                "zetacomponents/base": "~1.8"
+            },
+            "require-dev": {
+                "zetacomponents/unit-test": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Sergey Alexeev"
+                },
+                {
+                    "name": "Sebastian Bergmann"
+                },
+                {
+                    "name": "Jan Borsodi"
+                },
+                {
+                    "name": "Raymond Bosman"
+                },
+                {
+                    "name": "Frederik Holljen"
+                },
+                {
+                    "name": "Kore Nordmann"
+                },
+                {
+                    "name": "Derick Rethans"
+                },
+                {
+                    "name": "Vadym Savchuk"
+                },
+                {
+                    "name": "Tobias Schlitt"
+                },
+                {
+                    "name": "Alexandru Stanoi"
+                }
+            ],
+            "description": "This class allows you to analyse image files in different ways. At least the MIME type of the file is returned. In some cases (JPEG, TIFF and GIF) additional information is gathered as well.",
+            "homepage": "https://github.com/zetacomponents",
+            "time": "2014-09-27T19:26:09+00:00"
+        },
+        {
+            "name": "zetacomponents/image-conversion",
+            "version": "1.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zetacomponents/ImageConversion.git",
+                "reference": "120feb40965eb053482bc030e107352d9bbc5f13"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zetacomponents/ImageConversion/zipball/120feb40965eb053482bc030e107352d9bbc5f13",
+                "reference": "120feb40965eb053482bc030e107352d9bbc5f13",
+                "shasum": ""
+            },
+            "require": {
+                "zetacomponents/base": "~1.8",
+                "zetacomponents/image-analysis": "~1.1"
+            },
+            "require-dev": {
+                "zetacomponents/unit-test": "@dev"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Sergey Alexeev"
+                },
+                {
+                    "name": "Sebastian Bergmann"
+                },
+                {
+                    "name": "Jan Borsodi"
+                },
+                {
+                    "name": "Raymond Bosman"
+                },
+                {
+                    "name": "Frederik Holljen"
+                },
+                {
+                    "name": "Kore Nordmann"
+                },
+                {
+                    "name": "Derick Rethans"
+                },
+                {
+                    "name": "Vadym Savchuk"
+                },
+                {
+                    "name": "Tobias Schlitt"
+                },
+                {
+                    "name": "Alexandru Stanoi"
+                }
+            ],
+            "description": "A set of classes to apply different filters on images, such as colour changes, resizing and special effects.",
+            "homepage": "https://github.com/zetacomponents",
+            "time": "2014-09-27T19:26:09+00:00"
+        },
+        {
+            "name": "zetacomponents/mail",
+            "version": "1.9.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zetacomponents/Mail.git",
+                "reference": "4dc71ccbcc8b67951a2efe47d3fcc2aeaa7f530d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zetacomponents/Mail/zipball/4dc71ccbcc8b67951a2efe47d3fcc2aeaa7f530d",
+                "reference": "4dc71ccbcc8b67951a2efe47d3fcc2aeaa7f530d",
+                "shasum": ""
+            },
+            "require": {
+                "zetacomponents/base": "~1.8"
+            },
+            "require-dev": {
+                "zetacomponents/unit-test": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Sergey Alexeev"
+                },
+                {
+                    "name": "Sebastian Bergmann"
+                },
+                {
+                    "name": "Jan Borsodi"
+                },
+                {
+                    "name": "Raymond Bosman"
+                },
+                {
+                    "name": "Frederik Holljen"
+                },
+                {
+                    "name": "Kore Nordmann"
+                },
+                {
+                    "name": "Derick Rethans"
+                },
+                {
+                    "name": "Vadym Savchuk"
+                },
+                {
+                    "name": "Tobias Schlitt"
+                },
+                {
+                    "name": "Alexandru Stanoi"
+                },
+                {
+                    "name": "Sinisa Dukaric"
+                },
+                {
+                    "name": "Mikko Koppanen"
+                },
+                {
+                    "name": "Christian Michel"
+                }
+            ],
+            "description": "The component allows you construct and/or parse Mail messages conforming to  the mail standard. It has support for attachments, multipart messages and HTML  mail. It also interfaces with SMTP to send mail or IMAP, POP3 or mbox to  retrieve e-mail.",
+            "homepage": "https://github.com/zetacomponents",
+            "time": "2020-01-17T11:18:01+00:00"
+        },
+        {
+            "name": "zetacomponents/mvc-authentication-tiein",
+            "version": "1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zetacomponents/MvcAuthenticationTiein.git",
+                "reference": "4867e4001da4e05b29cae4fb5e066a7c4fec18ee"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zetacomponents/MvcAuthenticationTiein/zipball/4867e4001da4e05b29cae4fb5e066a7c4fec18ee",
+                "reference": "4867e4001da4e05b29cae4fb5e066a7c4fec18ee",
+                "shasum": ""
+            },
+            "require": {
+                "zetacomponents/authentication": "~1.3",
+                "zetacomponents/mvc-tools": "~1.1"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "apache2"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastian Bergmann"
+                },
+                {
+                    "name": "Kore Nordmann"
+                },
+                {
+                    "name": "Derick Rethans"
+                },
+                {
+                    "name": "Tobias Schlitt"
+                },
+                {
+                    "name": "Alexandru Stanoi"
+                }
+            ],
+            "description": "This component provides authentication filters for the MvcTools component.",
+            "homepage": "https://github.com/zetacomponents",
+            "time": "2014-09-27T19:26:09+00:00"
+        },
+        {
+            "name": "zetacomponents/mvc-tools",
+            "version": "1.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zetacomponents/MvcTools.git",
+                "reference": "6e910be5b6adf9749694813417a3341ea1a628fd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zetacomponents/MvcTools/zipball/6e910be5b6adf9749694813417a3341ea1a628fd",
+                "reference": "6e910be5b6adf9749694813417a3341ea1a628fd",
+                "shasum": ""
+            },
+            "require": {
+                "zetacomponents/base": "~1.8"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "*",
+                "zetacomponents/unit-test": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastian Bergmann"
+                },
+                {
+                    "name": "Kore Nordmann"
+                },
+                {
+                    "name": "Derick Rethans"
+                },
+                {
+                    "name": "Tobias Schlitt"
+                },
+                {
+                    "name": "Alexandru Stanoi"
+                },
+                {
+                    "name": "James Pic"
+                }
+            ],
+            "description": "The MvcTools component provides functionality for request parsing, routing, dispatching, views and response writing. With the tools in this component you can very easily build an MVC framework.",
+            "homepage": "https://github.com/zetacomponents",
+            "time": "2016-01-01T23:15:45+00:00"
+        },
+        {
+            "name": "zetacomponents/persistent-object",
+            "version": "1.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zetacomponents/PersistentObject.git",
+                "reference": "e2a41b48e05d9f8625f4cdbd5178c4a089b9ec56"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zetacomponents/PersistentObject/zipball/e2a41b48e05d9f8625f4cdbd5178c4a089b9ec56",
+                "reference": "e2a41b48e05d9f8625f4cdbd5178c4a089b9ec56",
+                "shasum": ""
+            },
+            "require": {
+                "zetacomponents/base": "~1.8"
+            },
+            "require-dev": {
+                "zetacomponents/unit-test": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Sergey Alexeev"
+                },
+                {
+                    "name": "Sebastian Bergmann"
+                },
+                {
+                    "name": "Jan Borsodi"
+                },
+                {
+                    "name": "Raymond Bosman"
+                },
+                {
+                    "name": "Frederik Holljen"
+                },
+                {
+                    "name": "Kore Nordmann"
+                },
+                {
+                    "name": "Derick Rethans"
+                },
+                {
+                    "name": "Vadym Savchuk"
+                },
+                {
+                    "name": "Tobias Schlitt"
+                },
+                {
+                    "name": "Alexandru Stanoi"
+                },
+                {
+                    "name": "Joel Arvidsson"
+                }
+            ],
+            "description": "This component allows you to store an arbitrary data structures to a fixed database table. The component provides all the functionality needed to fetch, list, delete etc these datastructures.",
+            "homepage": "https://github.com/zetacomponents",
+            "time": "2014-09-27T19:26:09+00:00"
+        },
+        {
+            "name": "zetacomponents/signal-slot",
+            "version": "1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zetacomponents/SignalSlot.git",
+                "reference": "9be26ecf7a407cf941b475b6f48baa486466d461"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zetacomponents/SignalSlot/zipball/9be26ecf7a407cf941b475b6f48baa486466d461",
+                "reference": "9be26ecf7a407cf941b475b6f48baa486466d461",
+                "shasum": ""
+            },
+            "require": {
+                "zetacomponents/base": "~1.8"
+            },
+            "require-dev": {
+                "zetacomponents/unit-test": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Sergey Alexeev"
+                },
+                {
+                    "name": "Sebastian Bergmann"
+                },
+                {
+                    "name": "Jan Borsodi"
+                },
+                {
+                    "name": "Raymond Bosman"
+                },
+                {
+                    "name": "Frederik Holljen"
+                },
+                {
+                    "name": "Kore Nordmann"
+                },
+                {
+                    "name": "Derick Rethans"
+                },
+                {
+                    "name": "Vadym Savchuk"
+                },
+                {
+                    "name": "Tobias Schlitt"
+                },
+                {
+                    "name": "Alexandru Stanoi"
+                }
+            ],
+            "description": "The SignalSlot component implements a mechanism for inter and intra object communication through the use of signals and slots.",
+            "homepage": "https://github.com/zetacomponents",
+            "time": "2014-09-27T19:26:09+00:00"
+        },
+        {
+            "name": "zetacomponents/system-information",
+            "version": "1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zetacomponents/SystemInformation.git",
+                "reference": "314ea9b2c98b3c20321a8d05ea8ba976479d8f88"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zetacomponents/SystemInformation/zipball/314ea9b2c98b3c20321a8d05ea8ba976479d8f88",
+                "reference": "314ea9b2c98b3c20321a8d05ea8ba976479d8f88",
+                "shasum": ""
+            },
+            "require": {
+                "zetacomponents/base": "~1.8"
+            },
+            "require-dev": {
+                "zetacomponents/unit-test": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Sergey Alexeev"
+                },
+                {
+                    "name": "Sebastian Bergmann"
+                },
+                {
+                    "name": "Jan Borsodi"
+                },
+                {
+                    "name": "Raymond Bosman"
+                },
+                {
+                    "name": "Frederik Holljen"
+                },
+                {
+                    "name": "Kore Nordmann"
+                },
+                {
+                    "name": "Derick Rethans"
+                },
+                {
+                    "name": "Vadym Savchuk"
+                },
+                {
+                    "name": "Tobias Schlitt"
+                },
+                {
+                    "name": "Alexandru Stanoi"
+                }
+            ],
+            "description": "Provides access to common system variables, such as CPU type and speed, and the available amount of memory.",
+            "homepage": "https://github.com/zetacomponents",
+            "time": "2016-10-23T21:18:48+00:00"
+        },
+        {
+            "name": "zetacomponents/webdav",
+            "version": "1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zetacomponents/Webdav.git",
+                "reference": "44a182f559e5c7bebccab5a112dd3ba8c84a48c0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zetacomponents/Webdav/zipball/44a182f559e5c7bebccab5a112dd3ba8c84a48c0",
+                "reference": "44a182f559e5c7bebccab5a112dd3ba8c84a48c0",
+                "shasum": ""
+            },
+            "require": {
+                "zetacomponents/base": "~1.8"
+            },
+            "require-dev": {
+                "zetacomponents/unit-test": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Sergey Alexeev"
+                },
+                {
+                    "name": "Sebastian Bergmann"
+                },
+                {
+                    "name": "Jan Borsodi"
+                },
+                {
+                    "name": "Raymond Bosman"
+                },
+                {
+                    "name": "Frederik Holljen"
+                },
+                {
+                    "name": "Kore Nordmann"
+                },
+                {
+                    "name": "Derick Rethans"
+                },
+                {
+                    "name": "Vadym Savchuk"
+                },
+                {
+                    "name": "Tobias Schlitt"
+                },
+                {
+                    "name": "Alexandru Stanoi"
+                }
+            ],
+            "description": "This component allows you to set up and run your own WebDAV (RFC 2518) server, to enable online content editing for the users of your system through the WebDAV HTTP extension.",
+            "homepage": "https://github.com/zetacomponents",
+            "time": "2014-09-27T19:26:10+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "ezsystems/ezpublish-legacy": 20,
+        "ezsystems/ezpublish-legacy-installer": 20,
+        "opencontent/easyvocs_connector-ls": 20,
+        "opencontent/ezpostgresqlcluster-ls": 20,
+        "opencontent/ocsupport-ls": 20,
+        "opencontent/openpa_bootstrapitalia-ls": 20,
+        "opencontent/occodicefiscale-ls": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": "5.6.40"
+    },
+    "platform-dev": []
+}

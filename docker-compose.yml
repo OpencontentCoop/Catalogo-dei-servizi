@@ -1,0 +1,75 @@
+version: '3.7'
+services:
+
+  php:
+    image: registry.gitlab.com/opencontent/servizipubblici/php
+    restart: unless-stopped
+    depends_on:
+      - postgres
+      - solr
+    environment:
+      EZ_ROOT: /var/www/html
+      EZ_INSTANCE: trentoservizipubblici
+
+  nginx:
+    image: registry.gitlab.com/opencontent/servizipubblici/nginx
+    restart: unless-stopped
+    environment:
+      EZ_INSTANCE: trentoservizipubblici
+    labels:
+      traefik.frontend.rule: 'Host:servizipubblici.localtest.me'
+    depends_on:
+      - php
+
+  varnish:
+    image: wodby/varnish
+    restart: unless-stopped
+    depends_on:
+      - nginx
+    environment:
+      VARNISH_BACKEND_GRACE: 10m
+      VARNISH_BACKEND_HOST: nginx
+      VARNISH_CACHE_STATIC_FILES: 1
+      VARNISH_DEFAULT_TTL: 300s
+      VARNISH_ERRORS_GRACE: 60s
+
+  solr:
+    image: 'registry.gitlab.com/opencontent/solr:4.10.4'
+    command: '-s /opt/ez'
+    restart: unless-stopped
+    volumes:
+      - './conf.d/solr:/opt/ez/'
+
+  postgres:
+    image: 'postgres:9.6-alpine'
+    restart: unless-stopped
+    labels:
+      traefik.enable: false
+    environment:
+      POSTGRES_DB: trentoservizipubblici
+      POSTGRES_USER: openpa
+      POSTGRES_PASSWORD: openp4ssword
+    volumes:
+      - './sql:/docker-entrypoint-initdb.d'
+      - 'pgdata:/var/lib/postgresql/data'
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  traefik:
+    image: registry.gitlab.com/opencontent/traefik-localtestme:latest 
+    restart: unless-stopped
+    ports:
+      - '80:80'
+      - '443:443'
+      - '8080:8080' # Dashboard
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+
+volumes:
+  html:
+  dfs:
+  solrdata:
+  pgdata:
