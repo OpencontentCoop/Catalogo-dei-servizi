@@ -1,0 +1,61 @@
+# This repository adheres to the publiccode.yml standard by including this 
+# metadata file that makes public software easily discoverable.
+# More info at https://github.com/italia/publiccode.yml
+
+publiccodeYmlVersion: '0.2'
+categories:
+  - content-management
+description:
+  it:
+    documentation: 'https://github.com/ComuneTrento/Catalogo-dei-servizi/blob/master/README.md'
+    features:
+      - Ricerca testuale
+      - Organizzazione dei servizi per argomento
+      - Organizzazione dei servizi secondo i controllati europei (Isa2)
+    genericName: Catalogo dei Servizi
+    longDescription: >
+      Lo scopo del catalogo è orientare il cittadino tra le informazioni
+      istituzionali ed i servizi offerti dall’ente pubblico.
+
+
+      Molti siti web della PA costringono il cittadino a orientarsi tra Uffici e
+      strutture interne all'Ente: questo sito web costituisce invece un esempio
+      di User Centered Design, guidato dalle Lnee Guida dei siti web della PA. I
+      servizi sono presentati secondo lo standard di classificazione Europea (
+      CPSV-AP) e Italiana (CPSV-AP\_IT) e orientano l'utente all'accesso ai
+      servizi usando un linguaggio semplice e sburocratizzato, dove i
+      riferimenti normativi occupano uno spazio preciso e non costituiscono un
+      ostacolo alla comprensione della pagina per gli utenti.
+    shortDescription: Catalogo dei Servizi
+developmentStatus: stable
+isBasedOn:
+  - 'https://gitlab.com/opencontent/opencity'
+it:
+  conforme:
+    gdpr: false
+    lineeGuidaDesign: true
+    misureMinimeSicurezza: false
+    modelloInteroperabilita: false
+  countryExtensionVersion: '0.2'
+  piattaforme:
+    anpr: false
+    cie: false
+    pagopa: false
+    spid: false
+legal:
+  license: GPL-2.0-only
+  mainCopyrightOwner: Comune di Trento
+  repoOwner: Comune di Trento
+localisation:
+  availableLanguages:
+    - it
+  localisationReady: false
+maintenance:
+  type: none
+name: Catalogo dei Servizi
+platforms:
+  - web
+releaseDate: '2020-06-01'
+softwareType: standalone/other
+softwareVersion: 1.0.0
+url: 'https://github.com/ComuneTrento/Catalogo-dei-servizi'
